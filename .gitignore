@@ -1,3 +1,4 @@
 lyrics-finetuned/
 __pycache__
 .cog/
+lyrics_trainer.ipynb
