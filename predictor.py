@@ -4,7 +4,7 @@ import torch
 
 class Predictor(BasePredictor):
     def setup(self):
-        self.model_name = "bigscience/bloom-560m"  # or your LoRA-tuned version
+        self.model_name = "./lyrics-finetuned"  # or your LoRA-tuned version
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_name)
         self.model = AutoModelForCausalLM.from_pretrained(
             self.model_name,
